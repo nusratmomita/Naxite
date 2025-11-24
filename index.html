@@ -10,6 +10,17 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2c4593a4a7.js" crossorigin="anonymous"></script>
 
+    <!-- for video popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 
     <title>Naxite</title>
@@ -18,7 +29,7 @@
 
     <!-- header section -->
     <header class="debugg">
-        <nav class="px-20 overflow-hidden pt-[25px] flex gap-20 justify-evenly items-center">
+        <nav class="overflow-hidden pt-[25px] flex gap-20 justify-evenly items-center px-20">
             <!-- img + siteName -->
             <a href="#" class="flex items-center gap-2 mr-[125px]">
                 <img class="w-[48px] h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
@@ -38,5 +49,156 @@
             <button class="text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[44px] pr-[43px] py-[15px] rounded-[50px] hover:text-[#2AB8DB]"><i class="text-[#2AB8DB] fa-regular fa-message"></i>Let's Chat</button>
         </nav>
     </header>
+
+    <main>
+        <!-- banner section pt-[221px] pb-[221px] pl-[372px] pr-[758px]  || xl:pt-[221px] xl:pb-[221px] xl:pl-[372px] -->
+        <div class="mt-[25px] "></div>
+            <div class="swiper my-director-slider h-[800px] max-w-[1920px] mx-auto mb-100 "> 
+                <div class="swiper-wrapper">
+                    <!-- slider - 1 -->
+                    <div class="swiper-slide relative">
+                        <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slider - 2 -->
+                    <div class="swiper-slide">
+                        <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slider - 3 -->
+                    <div class="swiper-slide">
+                        <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slider - 4 -->
+                    <div class="swiper-slide">
+                        <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination dots -->
+                <div class="ml-[450px] mb-[10px] swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('.video-popup').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    patterns: {
+                        youtube: {
+                            index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                            id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                            // Or null - full URL will be returned
+                            // Or a function that should return %id%, for example:
+                            // id: function(url) { return 'parsed id'; }
+
+                            src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                            },
+                    }
+                }
+            });
+        });
+    </script>
+
+     <script>
+        const swiper = new Swiper('.my-director-slider', {
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
