@@ -36,3 +36,16 @@
 .swiper-pagination-bullet-active {
   background: #FFA8A7
 }
+
+.button{
+  display: none;
+}
+/* ,.read_more_btn:hover */
+.project_img:hover + .button, .button:hover + .read_more_btn {
+  display: inline-block;
+}
+
+/* <div class="small-4 columns">
+    <img src="/wp-content/themes/adamslaw/assets/img/woman.png">
+    <a class="button" href="/jane/">View Jane's Profile</a>
+</div> */
