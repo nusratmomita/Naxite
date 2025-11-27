@@ -41,9 +41,9 @@
                     <li><a class="hover:text-[#2AB8DB]" href="#">Home</a></li>
                     <li class="group"><a class="flex justify-center items-center gap-1" href="#"><span class="group-hover:text-[#2AB8DB]">Pages</span><i class="text-[#77777780] group-hover:text-[#2AB8DB] fa-solid fa-angle-down"></i></a>
                         <ul class="absolute left-0 top-full bg-white hidden lg:group-hover:block shadow-lg">
-                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">Page 1</a></li>
-                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">Page 2</a></li>
-                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">Page 3s</a></li>
+                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-black border-b border-[#EAEAEA]">Page 1</a></li>
+                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-black border-b border-[#EAEAEA]">Page 2</a></li>
+                            <li><a href="#" class="text-left block px-4 py-2 hover:text-[#017848] text-black border-b border-[#EAEAEA]">Page 3s</a></li>
                         </ul>
                     </li>
                     <li><a class="hover:text-[#2AB8DB]" href="#">Services</a></li>
@@ -56,7 +56,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="hidden">
         <!-- banner section 
          pt-[221px] pb-[221px] pl-[372px] pr-[758px]  || xl:pt-[221px] xl:pb-[221px] xl:pl-[372px] 
         -->
@@ -642,7 +642,7 @@
         <!-- why choose us section -->
         <div class="h-[650px] mt-[120px] relative">
             <div class="bg-[url('./assets/whyChooseUsBg.png')] bg-cover bg-center w-full h-full relative">
-                <div class="flex flex-collg:flex-row gap-[70px] justify-center items-center">
+                <div class="flex flex-col lg:flex-row gap-[70px] justify-center items-center">
                     <div class="text-[#FFFFFF] pt-[100px] pl-[50px]">
                         <h2 class="font-[700] text-[32px] leading-[42px]">Why Choose Us Our It <br> Solution Company Service.</h2>
                         <p class="mt-[12px] mb-[29px]">Nulla et neque id nibh pretium vestibulum vitae euismod nisi. <br> Inside tomopi condimentum dictum odio, sed faucibus enim <br/> ornare a. Nunc feugiat extem usto vestibulum.</p>
@@ -835,7 +835,7 @@
     </main>
 
     <!-- footer section -->
-    <footer>
+    <footer class="hidden">
         <div class="mt-[120px] bg-[#1F242E] text-[#FFFFFF] flex flex-col lg:flex-row lg:gap-[30px]">
             <div class="flex flex-col lg:mt-[115px] mt-[64px] lg:mb-[155px] lg:mxx-25 mr-[16px] ml-[16px] lg:ml-[150px]">
                 <a href="#" class="flex items-center gap-2 mr-[125px]">
