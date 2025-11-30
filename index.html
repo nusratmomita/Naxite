@@ -28,277 +28,285 @@
 <body class="syne-font">
     
     <!-- header section -->
-    <header class="container">
-        <nav class="pt-[25px] flex flex-row items-center justify-between lg:items-center">
-            <!-- img + siteName -->
-            <a href="#" class="flex items-center gap-2">
-                <img class="w-[40px] lg:w-[48px] lg:h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
-                <h1 class="font-[500] text-[20px] lg:font-[700] lg:text-[32px] text-[#1F242E]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
-            </a>
+    <header class="header">
+        <div class="container">
+            <nav class="pt-[25px] flex flex-row items-center justify-between lg:items-center">
+                <!-- img + siteName -->
+                <a href="#" class="flex items-center gap-2">
+                    <img class="w-[40px] lg:w-[48px] lg:h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
+                    <h1 class="font-[500] text-[20px] lg:font-[700] lg:text-[32px] text-[#1F242E]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
+                </a>
 
-            <!-- Hamburger -->
-            <button id="hamburger" class="cursor-pointer block lg:hidden focus:-none ml-40">
-                <img src="./assets/hamburgerMenuIcon.png" alt="Menu" class="w-8 h-8">
-            </button>
+                <!-- Hamburger -->
+                <button id="hamburger" class="cursor-pointer block lg:hidden focus:-none ml-40">
+                    <img src="./assets/hamburgerMenuIcon.png" alt="Menu" class="w-8 h-8">
+                </button>
 
-            <!-- Cross Icon -->
-            <button id="cross" class="cursor-pointer hidden lg:hidden text-3xl font-bold ml-40">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+                <!-- Cross Icon -->
+                <button id="cross" class="cursor-pointer hidden lg:hidden text-3xl font-bold ml-40">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
 
-            <!-- nav links -->
-            <div id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-20 bg-[#2AB8DB] lg:py-0 py-3 rounded-[20px] lg:py-0 right-5 w-2/3 lg:w-auto lg:bg-transparent z-40">
-                <ul class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 font-[700] text-[18px] text-white lg:text-[#1F242E] ">
-                    <li><a class="hover:text-black lg:hover:text-[#2AB8DB] -ml-5 lg:-ml-0" href="#">Home</a></li>
-                    <li class="group relative w-full">
-                        <a class="flex justify-center items-center gap-1 lg:py-4" href="#">
-                            <span class="hover:text-black lg:group-hover:text-[#2AB8DB]">Pages</span>
-                            <i class="text-[#2AB8DB] lg:text-[#77777780] group-hover:text-[#2AB8DB] fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul class=" absolute left-0 top-full bg-[#FFFFFF] hidden lg:group-hover:block shadow-lg ">
-                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 1</a></li>
-                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 2</a></li>
-                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Services</a></li>
-                    <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Projects</a></li>
-                    <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <!-- button -->
-            <div class="group">
-                <button class="text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[20px] pr-[20px] py-[10px] lg:pl-[44px] lg:pr-[43px] lg:py-[15px] rounded-[50px] group-hover:text-[#FFFFFF] group-hover:bg-[#2AB8DB]"><i class="text-[#2AB8DB] group-hover:text-[#FFFFFF] fa-regular fa-message"></i>Let's Chat</button>
-            </div>
-        </nav>
+                <!-- nav links -->
+                <div id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-20 bg-[#2AB8DB] lg:py-0 py-3 rounded-[20px] lg:py-0 right-5 w-2/3 lg:w-auto lg:bg-transparent z-40">
+                    <ul class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 font-[700] text-[18px] text-white lg:text-[#1F242E] ">
+                        <li><a class="hover:text-black lg:hover:text-[#2AB8DB] -ml-5 lg:-ml-0" href="#">Home</a></li>
+                        <li class="group relative w-full">
+                            <a class="flex justify-center items-center gap-1 lg:py-4" href="#">
+                                <span class="hover:text-black lg:group-hover:text-[#2AB8DB]">Pages</span>
+                                <i class="text-[#2AB8DB] lg:text-[#77777780] group-hover:text-[#2AB8DB] fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class=" absolute left-0 top-full bg-[#FFFFFF] hidden lg:group-hover:block shadow-lg ">
+                                <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 1</a></li>
+                                <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 2</a></li>
+                                <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-16 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Services</a></li>
+                        <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Projects</a></li>
+                        <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- button -->
+                <div class="group">
+                    <button class="text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[20px] pr-[20px] py-[10px] lg:pl-[44px] lg:pr-[43px] lg:py-[15px] rounded-[50px] group-hover:text-[#FFFFFF] group-hover:bg-[#2AB8DB]"><i class="text-[#2AB8DB] group-hover:text-[#FFFFFF] fa-regular fa-message"></i>Let's Chat</button>
+                </div>
+            </nav>
+        </div>
     </header>
 
 
-    <main>
-        <!-- banner section 
-         pt-[221px] pb-[221px] pl-[372px] pr-[758px]  || xl:pt-[221px] xl:pb-[221px] xl:pl-[372px] 
-        -->
-        <div class="hidden mt-[25px] swiper my-director-slider h-[800px] max-w-[1920px] mx-auto"> 
-            <div class="swiper-wrapper">
-                <!-- slider - 1 -->
-                <div class="swiper-slide relative">
-                    <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
-                    <div class="relative text-white lg:ml-35 lg:pt-40">
-                        <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
-                        <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
-                        <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+    <main class="bg-[#F7F7F7]">
+        <!-- banner section -->
+        <div  class="bannerSection">
+            <div class="containerr">
+            <div class="mt-[25px] swiper my-director-slider"> 
+                <div class="swiper-wrapper">
+                    <!-- slider - 1 -->
+                    <div class="swiper-slide mb-[221px]">
+                        <img class="absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+    
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[576px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <!-- pink circle -->
-                    <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
-                    <!-- blue circle  -->
-                    <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
-                    <!-- video play button -->
-                    <div class="absolute -top-28 left-[1150px]">
-                        <a 
-                            href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
-                            class="video-popup relative cursor-pointer"
-                        >
-                            <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
-                            <div class="ml-6 -mt-10">
-                                <i class="fa-solid fa-play text-white"></i>
-                            </div>
-                        </a>
+                    <!-- slider - 2 -->
+                    <div class="swiper-slide mb-[221px]">
+                        <img class="w-full h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+    
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[576px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slider - 3 -->
+                    <div class="swiper-slide mb-[221px]">
+                        <img class="w-full h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+    
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[576px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slider - 4 -->
+                    <div class="swiper-slide mb-[221px]">
+                        <img class="w-full h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
+                        <div class="relative text-white lg:ml-35 lg:pt-40">
+                            <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
+                            <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
+                            <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
+                        </div>
+    
+                        <!-- pink circle -->
+                        <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                        <!-- blue circle  -->
+                        <img class="w-[30px] h-[30px] absolute top-[576px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
+                        <!-- video play button -->
+                        <div class="absolute -top-28 left-[1150px]">
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup relative cursor-pointer"
+                            >
+                                <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
+                                <div class="ml-6 -mt-10">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- slider - 2 -->
-                <div class="swiper-slide">
-                    <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
-                    <div class="relative text-white lg:ml-35 lg:pt-40">
-                        <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
-                        <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
-                        <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
-                    </div>
-
-                    <!-- pink circle -->
-                    <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
-                    <!-- blue circle  -->
-                    <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
-                    <!-- video play button -->
-                    <div class="absolute -top-28 left-[1150px]">
-                        <a 
-                            href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
-                            class="video-popup relative cursor-pointer"
-                        >
-                            <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
-                            <div class="ml-6 -mt-10">
-                                <i class="fa-solid fa-play text-white"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- slider - 3 -->
-                <div class="swiper-slide">
-                    <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
-                    <div class="relative text-white lg:ml-35 lg:pt-40">
-                        <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Best Of <span class="text-[#2AB8DB]">IT</span> Service<br> & IT Solutions.</h1>
-                        <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
-                        <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
-                    </div>
-
-                    <!-- pink circle -->
-                    <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
-                    <!-- blue circle  -->
-                    <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
-                    <!-- video play button -->
-                    <div class="absolute -top-28 left-[1150px]">
-                        <a 
-                            href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
-                            class="video-popup relative cursor-pointer"
-                        >
-                            <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
-                            <div class="ml-6 -mt-10">
-                                <i class="fa-solid fa-play text-white"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- slider - 4 -->
-                <div class="swiper-slide">
-                    <img class="w-full max-w-[1920px] h-[800px] absolute inset-0" src="./assets/bannerImg.png" alt="bannerImg">
-                    <div class="relative text-white lg:ml-35 lg:pt-40">
-                        <h1 class="debugg font-[700] text-[20px] lg:text-[82px] leading-[95px]">Perfect Place for <br/> your Of IT Service & IT Solutions.</h1>
-                        <p class="debugg font-[600] text-[18px] leading-[30px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. <br/> Proin sed tellus massa. Nullam bibendum sodales.</p>
-                        <button class="debugg cursor-pointer whitespace-nowrap syne-font font-[700] text-4 tracking-wider mt-[45px] bg-[#2AB8DB] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#2AB8DB] pt-[21px] pb-[20px] px-[50px] rounded-[100px]">Get In Touch<i class="ml-2 fa-solid fa-arrow-right"></i></button>
-                    </div>
-
-                    <!-- pink circle -->
-                    <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
-                    <!-- blue circle  -->
-                    <img class="w-[30px] h-[30px] absolute top-[676px] bottom-[94px] left-[1000px] right-[610px]" src="./assets/blue_circle.png" alt="blue_circle">
-                    <!-- video play button -->
-                    <div class="absolute -top-28 left-[1150px]">
-                        <a 
-                            href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
-                            class="video-popup relative cursor-pointer"
-                        >
-                            <img class="mt-120 w-15 h-15" src="./assets/pink_play_btn.png" alt="pink_play_btn">
-                            <div class="ml-6 -mt-10">
-                                <i class="fa-solid fa-play text-white"></i>
-                            </div>
-                        </a>
-                    </div>
+    
+                <!-- Pagination dots -->
+                <div class="-mt-[200px] ">
+                    <div class="ml-[550px] swiper-pagination"></div>
                 </div>
             </div>
-
-            <!-- Pagination dots -->
-            <div class="ml-[450px] mb-[10px] swiper-pagination"></div>
+            </div>
         </div>
 
         <!-- service section -->
-        <div class="container">
-            <div class="mt-[120px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
-                <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300
-                                    group-hover:filter 
-                                    group-hover:invert-[100%] 
-                                    group-hover:sepia-[6%] 
-                                    group-hover:saturate-[2275%] 
-                                    group-hover:hue-rotate-[151deg] 
-                                    group-hover:brightness-[92%] 
-                                    group-hover:contrast-[90%]"
-                            src="./assets/Consultancy.png" 
-                            alt="Consultancy" />
+        <div class="bg-[#F7F7F7] pt-[120px]">
+            <div class="container">
+                <div class=" flex flex-col lg:flex-row gap-[30px] justify-center items-center">
+                    <div class="group w-[370px] h-[481px] bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                        <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300
+                                        group-hover:filter 
+                                        group-hover:invert-[100%] 
+                                        group-hover:sepia-[6%] 
+                                        group-hover:saturate-[2275%] 
+                                        group-hover:hue-rotate-[151deg] 
+                                        group-hover:brightness-[92%] 
+                                        group-hover:contrast-[90%]"
+                                src="./assets/Consultancy.png" 
+                                alt="Consultancy" />
+                        </div>
+                        <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                                src="./assets/serviceHovered1.png" 
+                                alt="Consultancy" />
+                        </div>
+        
+                        <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                        <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+        
+                        <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">IT Consultancy</h2>
+                        <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
+        
+                        <ul class="open-sans-font mt-[30px]">
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
+                        </ul>
                     </div>
-                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
-                            src="./assets/serviceHovered1.png" 
-                            alt="Consultancy" />
+                    <div class="group w-[370px] h-[481px] bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                        <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300"
+                                src="./assets/serviceUnhovered2.png" 
+                                alt="Consultancy" />
+                        </div>
+                        <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                                src="./assets/Data&Analytics.png" 
+                                alt="Consultancy" />
+                        </div>   
+                    
+                        <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                        <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+        
+                        <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">Data & Analytics</h2>
+                        <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
+        
+                        <ul class="open-sans-font mt-[30px]">
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
+                        </ul>
                     </div>
-    
-                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
-                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
-    
-                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">IT Consultancy</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
-    
-                    <ul class="open-sans-font mt-[30px]">
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
-                    </ul>
+                    <div class="group w-[370px] h-[481px] bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px]  cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                        <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300"
+                                src="./assets/CyberSecurity.png" 
+                                alt="Consultancy" />
+                        </div>
+                        <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                            <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                                src="./assets/serviceHovered3.png" 
+                                alt="Consultancy" />
+                        </div>
+                        <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                        <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+        
+                        <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px] group-hover:text-[#FFFFFF]">Cyber Security</h2>
+                        <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
+        
+                        <ul class="open-sans-font mt-[30px]">
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
+                            <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300"
-                            src="./assets/serviceUnhovered2.png" 
-                            alt="Consultancy" />
-                    </div>
-                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
-                            src="./assets/Data&Analytics.png" 
-                            alt="Consultancy" />
-                    </div>   
-                
-                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
-                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
-    
-                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">Data & Analytics</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
-    
-                    <ul class="open-sans-font mt-[30px]">
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
-                    </ul>
+        
+                <div class="flex justify-center items-center">
+                    <hr class="mt-[30px] lg:mt-[120px] border border-[#1F242E1A] w-[1170px] mb-[10px] lg:mb-[45px]"/>
                 </div>
-                <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px]  cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300"
-                            src="./assets/CyberSecurity.png" 
-                            alt="Consultancy" />
-                    </div>
-                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
-                            src="./assets/serviceHovered3.png" 
-                            alt="Consultancy" />
-                    </div>
-                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
-                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+        
+                <marquee class="container flex-col lg:flex-row flex justify-center items-center cursor-pointer" marquee="scroll" direction="left" duration="2000" onmouseover="this.stop()" onmouseout="this.start()">
+                    <div class="flex justify-center items-center gap-[100px]">
+                        <img src="./assets/Google_2015_logo.png" alt="google">
+                        <img src="./assets/amazon.png" alt="amazon">
+                        <img src="./assets/LinkedIn_Logo 1.png" alt="linkedIn">
+                        <img src="./assets/2560px-Slack_Technologies_Logo 1.png" alt="slack">
+                        <img src="./assets/envato.png" alt="envato">
+                        <img src="./assets/Dribbble_logo 1.png" alt="dribble">
     
-                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px] group-hover:text-[#FFFFFF]">Cyber Security</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
     
-                    <ul class="open-sans-font mt-[30px]">
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
-                    </ul>
-                </div>
+                        <!-- <img src="./assets/Google_2015_logo.png" alt="google">
+                        <img src="./assets/amazon.png" alt="amazon">
+                        <img src="./assets/LinkedIn_Logo 1.png" alt="linkedIn">
+                        <img src="./assets/2560px-Slack_Technologies_Logo 1.png" alt="slack">
+                        <img src="./assets/envato.png" alt="envato">
+                        <img src="./assets/Dribbble_logo 1.png" alt="dribble"> -->
+                    </div>
+                </marquee>
             </div>
-    
-            <div class="flex justify-center items-center">
-                <hr class="mt-[30px] lg:mt-[120px] border border-[#1F242E1A] w-[1170px] mb-[10px] lg:mb-[45px]"/>
-            </div>
-    
-            <marquee class="container flex-col lg:flex-row flex justify-center items-center cursor-pointer" marquee="scroll" direction="left" duration="2000" onmouseover="this.stop()" onmouseout="this.start()">
-                <div class="flex justify-center items-center gap-[100px]">
-                    <img src="./assets/Google_2015_logo.png" alt="google">
-                    <img src="./assets/amazon.png" alt="amazon">
-                    <img src="./assets/LinkedIn_Logo 1.png" alt="linkedIn">
-                    <img src="./assets/2560px-Slack_Technologies_Logo 1.png" alt="slack">
-                    <img src="./assets/envato.png" alt="envato">
-                    <img src="./assets/Dribbble_logo 1.png" alt="dribble">
-
-
-                    <!-- <img src="./assets/Google_2015_logo.png" alt="google">
-                    <img src="./assets/amazon.png" alt="amazon">
-                    <img src="./assets/LinkedIn_Logo 1.png" alt="linkedIn">
-                    <img src="./assets/2560px-Slack_Technologies_Logo 1.png" alt="slack">
-                    <img src="./assets/envato.png" alt="envato">
-                    <img src="./assets/Dribbble_logo 1.png" alt="dribble"> -->
-                </div>
-            </marquee>
         </div>
 
         <!-- about us section -->
-        <div class="hidden max-w-[1920px] mx-auto">
+        <div>
             <div class="mt-[114px] bg-[#1F242E] flex flex-col lg:flex-row gap-20 justify-center">
                 <!-- left side image -->
                 <div class="w-full lg:w-[35%] relative" >
@@ -346,187 +354,192 @@
         </div>
 
         <!-- case study section -->
-        <div class="container mt-[104px]">
-            <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Case Study</h3>
-            <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
-            
-            <div class="mt-[43px] grid gap-[30px] grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 justify-center items-center">
-                <div class="relative group">
-                    <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
-
-                        <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
-                            <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
-                            </div>
-                        </div> 
+        <div class="bg-[#F7F7F7] pt-[120px]">
+            <div class="container">
+                <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Case Study</h3>
+                <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+                
+                <div class="mt-[43px] grid gap-[30px] grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 justify-center items-center">
+                    <div class="relative group">
+                        <div class="relative group h-[370px]">
+                            <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
+    
+                            <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
+                                <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+                                    <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
+                        <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                     </div>
-                    <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
-                    <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                    <div class="relative group">
+                        <div class="relative group h-[370px]">
+                            <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
+    
+                            <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
+                                <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+                                    <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Web design, Mobile</h4>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, business uX/UI design.</h2>
+                        <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                    </div>
+                    <div class="relative group">
+                        <div class="relative group h-[370px]">
+                            <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
+    
+                            <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
+                                <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+                                    <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
+                        <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                    </div>
+                    <div class="relative group">
+                        <div class="relative group h-[370px]">
+                            <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
+    
+                            <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
+                                <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+                                    <i class="fa-solid fa-arrow-up-long text-2xl text-[#FFFFFF] rotate-20"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Web design, Mobile</h4>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, business uX/UI design.</h2>
+                        <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                    </div>
                 </div>
-                <div class="relative group">
-                    <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
-
-                        <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
-                            <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
-                    <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                </div>
-                <div class="relative group">
-                    <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
-
-                        <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
-                            <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] rotate-20 text-2xl"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
-                    <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                </div>
-                <div class="relative group">
-                    <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
-
-                        <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
-                            <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                <i class="fa-solid fa-arrow-up-long text-2xl text-[#FFFFFF] rotate-20"></i>
-                            </div>
-                        </div> 
-                    </div>
-                    <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
-                    <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                <div class="flex justify-center items-center">
+                    <button class="mt-[50px] text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[44px] pr-[43px] py-[15px] rounded-[50px] hover:text-[#2AB8DB] hover:text-[#FFFFFF] hover:bg-[#2AB8DB]">View All Portfolio<i class="fa-solid fa-arrow-right"></i></i></button>
                 </div>
             </div>
-            <div class="flex justify-center items-center">
-                <button class="mt-[50px] text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[44px] pr-[43px] py-[15px] rounded-[50px] hover:text-[#2AB8DB] hover:text-[#FFFFFF] hover:bg-[#2AB8DB]">View All Portfolio<i class="fa-solid fa-arrow-right"></i></i></button>
-            </div>
-
         </div>
 
         <!-- success numbers section -->
-        <div class="hidden h-[600px] mt-[120px] relative">
-            <div class="bg-[url('./assets/SuccessNoBG.png')] bg-cover bg-center w-full h-full relative">
-
-                <img class="absolute top-0 left-0 -ml-50" src="./assets/earthImg.png" alt="earthImg">
-
-                <!-- pink circle -->
-                <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
-                <!-- pink circle -->
-                <img class="w-[30px] h-[30px] absolute top-[550px] left-[1100px]" src="./assets/pink_circle.png" alt="pink_circle">
-
-                <div class="flex justify-between items-start w-full h-full px-[250px] pt-[107px]">
-
-                    <div class="max-w-[750px]">
-                        <h2 class="text-white font-[700] text-[62px] leading-[100%]">
-                            Our Professional <span class="text-[#FFA8A7] whitespace-nowrap">IT</span> Solution Service.
-                        </h2>
-
-                        <p class="mt-[4.5px] font-[400] text-white text-[18px] leading-[30px] max-w-[650px]">
-                            Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo.
-                            Proin sed tellus massa. Nullam bibendum sodales est in faucibus.
-                        </p>
-
-                        <div class="mt-[44.5px] flex gap-[30px] mb-[120px]">
-                            <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
-                                <i class="text-[#F7F7F7] text-3xl mb-5 fa-solid fa-people-group"></i>
-                                <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
-                                    30 + <br> Member
-                                </h3>
-                            </div>
-
-                            <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
-                                <img class="mb-5" src="./assets/Consultancy.png" alt="Consultancy">
-                                <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
-                                    65 % <br> Projects
-                                </h3>
-                            </div>
-
-                            <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
-                                <img class="mb-5" src="./assets/Consultancy.png" alt="Digital">
-                                <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
-                                    85% SEO <br> Sketch
-                                </h3>
+        <div>
+            <div class="h-[600px] mt-[120px] relative">
+                <div class="bg-[url('./assets/SuccessNoBG.png')] bg-cover bg-center w-full h-full relative">
+    
+                    <img class="absolute top-0 left-0 -ml-50" src="./assets/earthImg.png" alt="earthImg">
+    
+                    <!-- pink circle -->
+                    <img class="w-[30px] h-[30px] absolute top-[68px] left-[160px]" src="./assets/pink_circle.png" alt="pink_circle">
+                    <!-- pink circle -->
+                    <img class="w-[30px] h-[30px] absolute top-[550px] left-[1100px]" src="./assets/pink_circle.png" alt="pink_circle">
+    
+                    <div class="flex justify-between items-start w-full h-full px-[250px] pt-[107px]">
+    
+                        <div class="max-w-[750px]">
+                            <h2 class="text-white font-[700] text-[62px] leading-[100%]">
+                                Our Professional <span class="text-[#FFA8A7] whitespace-nowrap">IT</span> Solution Service.
+                            </h2>
+    
+                            <p class="mt-[4.5px] font-[400] text-white text-[18px] leading-[30px] max-w-[650px]">
+                                Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo.
+                                Proin sed tellus massa. Nullam bibendum sodales est in faucibus.
+                            </p>
+    
+                            <div class="mt-[44.5px] flex gap-[30px] mb-[120px]">
+                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                                    <i class="text-[#F7F7F7] text-3xl mb-5 fa-solid fa-people-group"></i>
+                                    <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
+                                        30 + <br> Member
+                                    </h3>
+                                </div>
+    
+                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                                    <img class="mb-5" src="./assets/Consultancy.png" alt="Consultancy">
+                                    <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
+                                        65 % <br> Projects
+                                    </h3>
+                                </div>
+    
+                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                                    <img class="mb-5" src="./assets/Consultancy.png" alt="Digital">
+                                    <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
+                                        85% SEO <br> Sketch
+                                    </h3>
+                                </div>
                             </div>
                         </div>
+    
+                        <!-- <img class="w-[350px] " src="./assets/teamwork.jpg" alt="teamwork"> -->
+    
                     </div>
-
-                    <!-- <img class="w-[350px] " src="./assets/teamwork.jpg" alt="teamwork"> -->
-
+    
                 </div>
-
             </div>
         </div>
 
         <!-- team member section  -->
-        <div class="mt-[104px] container">
-            <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Team Member</h3>
-            <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
-            
-            <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate1">
-                    <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
-                    <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
-                    <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <ul class="flex justify-center items-center gap-5 mb-[17px]">
-                        <li class="group-hover:text-[#2AB8DB]">Fb.</li>
-                        <li>Ln.</li>
-                        <li>Dr.</li>
-                        <li>Be.</li>
-                    </ul>
+        <div class="bg-[#F7F7F7] pt-[104px]">
+            <div class="container">
+                <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Team Member</h3>
+                <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+                
+                <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
+                    <div class="bg-[#FFFFFF] rounded-[10px] text-center group transition-all duration-300">
+                        <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate1">
+                        <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
+                        <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
+                        <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <ul class="flex justify-center items-center gap-5 mb-[17px]">
+                            <li class="group-hover:text-[#2AB8DB]">Fb.</li>
+                            <li>Ln.</li>
+                            <li>Dr.</li>
+                            <li>Be.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FFFFFF] rounded-[10px] text-center group transition-all duration-300">
+                        <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate2">
+                        <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
+                        <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Roksana Rahman</h4>
+                        <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <ul class="flex justify-center items-center gap-5 mb-[17px]">
+                            <li>Fb.</li>
+                            <li class="group-hover:text-[#2AB8DB]">Ln.</li>
+                            <li>Dr.</li>
+                            <li>Be.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FFFFFF] rounded-[10px] text-center group transition-all duration-300">
+                        <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate3">
+                        <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
+                        <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
+                        <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <ul class="flex justify-center items-center gap-5 mb-[17px]">
+                            <li>Fb.</li>
+                            <li>Ln.</li>
+                            <li class="group-hover:text-[#2AB8DB]">Dr.</li>
+                            <li>Be.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FFFFFF] rounded-[10px] text-center group transition-all duration-300">
+                        <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate4">
+                        <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
+                        <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
+                        <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <ul class="flex justify-center items-center gap-5 mb-[17px]">
+                            <li>Fb.</li>
+                            <li>Ln.</li>
+                            <li>Dr.</li>
+                            <li class="group-hover:text-[#2AB8DB]">Be.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate2">
-                    <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
-                    <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Roksana Rahman</h4>
-                    <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <ul class="flex justify-center items-center gap-5 mb-[17px]">
-                        <li>Fb.</li>
-                        <li class="group-hover:text-[#2AB8DB]">Ln.</li>
-                        <li>Dr.</li>
-                        <li>Be.</li>
-                    </ul>
-                </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate3">
-                    <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
-                    <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
-                    <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <ul class="flex justify-center items-center gap-5 mb-[17px]">
-                        <li>Fb.</li>
-                        <li>Ln.</li>
-                        <li class="group-hover:text-[#2AB8DB]">Dr.</li>
-                        <li>Be.</li>
-                    </ul>
-                </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate4">
-                    <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
-                    <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
-                    <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <ul class="flex justify-center items-center gap-5 mb-[17px]">
-                        <li>Fb.</li>
-                        <li>Ln.</li>
-                        <li>Dr.</li>
-                        <li class="group-hover:text-[#2AB8DB]">Be.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
+            </div>  
+        </div>
 
         <!-- feedback section  -->
-        <div class="mt-[120px] ">
+        <div class="bg-[#F7F7F7] pt-[120px]">
             <div class="container relative">
                 <h2 class="mt-[170px] absolute -top-[140px] left-1/2 -translate-x-1/2 whitespace-nowrap font-[700] text-[40px] lg:text-[102px] leading-[100px] text-[#1F242E1A] text-centerr z-0 pointer-events-none">What Client Says?</h2>
                 <div class="swiper my-director-slider"> 
@@ -701,14 +714,14 @@
         </div>
 
         <!-- blog section  -->
-        <div class="mt-[106px] ">
+        <div class="mt-[106px]">
             <div class="container">
                 <h3 class="font-[700] text-[52px] text-center text-[#1F242E] ">Our News And Blogs</h3>
                 <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
                 
                 <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
                     <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog1.jpg" alt="blog1">
+                        <img class="w-[370px] h-[270px] rounded-[10px] transition-all duration-300" src="./assets/blog1.jpg" alt="blog1">
                         <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
                         <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                         <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More
@@ -733,7 +746,7 @@
                         </div>
                     </div>
                     <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog2.jpg" alt="blog2">
+                        <img class="w-[370px] h-[270px] rounded-[10px] transition-all duration-300" src="./assets/blog2.jpg" alt="blog2">
                         <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
                         <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                         <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More
@@ -758,7 +771,7 @@
                         </div>
                     </div>
                     <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog3.jpg" alt="blog3">
+                        <img class="w-[370px] h-[270px] rounded-[10px] transition-all duration-300" src="./assets/blog3.jpg" alt="blog3">
                         <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
                         <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                         <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read more
@@ -787,79 +800,81 @@
         </div>
 
         <!-- more features -->
-        <div class="mt-[120px] max-w-[1920px] mx-auto">
-            <div class="flex flex-col lg:flex-row gap-[15px] lg:gap-[30px] justify-center items-center">
-                <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB]">
-                    <img class="px-[10px] group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service1.png" alt="service1"/>
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E]">Cloud Storage</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
-                </div>
-                <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
-                    <img class="mr-4 group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service2.png" alt="service2"/>
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-9">Infrastructure</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Storage</h4>
-                </div>
-                <div class="group cursor-pointer debugg  bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
-                    <img class="px-[10px] debugg group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service3.png" alt="service3"/>
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-8">IT Engineer</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Service</h4>
-                </div>
-                <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
-                    <img class="group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service4.png" alt="service4">
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-9">Cyber Security</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
-                </div>
-                <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB]">
-                    <img class="px-[10px] group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service1.png" alt="service1"/>
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E]">Healthcare</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
-                </div>
-                <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
-                    <img class="group-hover:filter 
-                                group-hover:invert-[100%] 
-                                group-hover:sepia-[6%] 
-                                group-hover:saturate-[2275%] 
-                                group-hover:hue-rotate-[151deg] 
-                                group-hover:brightness-[0%] 
-                                group-hover:contrast-[90%]" 
-                            src="./assets/service6.png" alt="service6">
-                    <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-8">Cloud Storage</h2>
-                    <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
+        <div class="container">
+            <div class="mt-[120px] pb-[120px]">
+                <div class="flex flex-col lg:flex-row gap-[15px] lg:gap-[30px] justify-center items-center">
+                    <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB]">
+                        <img class="px-[10px] group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service1.png" alt="service1"/>
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E]">Cloud Storage</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
+                    </div>
+                    <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
+                        <img class="mr-4 group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service2.png" alt="service2"/>
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-9">Infrastructure</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Storage</h4>
+                    </div>
+                    <div class="group cursor-pointer debugg  bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
+                        <img class="px-[10px] debugg group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service3.png" alt="service3"/>
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-8">IT Engineer</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Service</h4>
+                    </div>
+                    <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
+                        <img class="group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service4.png" alt="service4">
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-9">Cyber Security</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
+                    </div>
+                    <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB]">
+                        <img class="px-[10px] group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service1.png" alt="service1"/>
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E]">Healthcare</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
+                    </div>
+                    <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB] flex flex-col justify-center items-center">
+                        <img class="group-hover:filter 
+                                    group-hover:invert-[100%] 
+                                    group-hover:sepia-[6%] 
+                                    group-hover:saturate-[2275%] 
+                                    group-hover:hue-rotate-[151deg] 
+                                    group-hover:brightness-[0%] 
+                                    group-hover:contrast-[90%]" 
+                                src="./assets/service6.png" alt="service6">
+                        <h2 class="group-hover:text-[#FFFFFF] font-[700] text-[16px] text-center text-[#1F242E] mt-8">Cloud Storage</h2>
+                        <h4 class="group-hover:text-[#FFFFFF] font-[400] text-[14px] text-center text-[#2AB8DB] mt-2">IT Recharge</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -868,75 +883,75 @@
 
     <!-- footer section -->
     <footer>
-        <div class="mt-[120px] bg-[#1F242E] text-[#FFFFFF] flex flex-col lg:flex-row lg:gap-[30px]">
-            <div class="flex flex-col lg:mt-[115px] mt-[64px] mb-[155px] mr-[16px] ml-[16px] ml-[150px]">
-                <a href="#" class="flex items-center gap-2 mr-[125px]">
-                    <img class="w-[48px] h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
-                    <h1 class="font-[700] text-[32px] text-[#FFFFFF]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
-                </a>
-                <h5 class="mt-[20px] mb-[24px] font-[500] text-[14px] leading-[24px] text-[#FFFFFFB2] ">Duis et leo eleifend, consectetur diam <br/> ac, efficitur augue. Pellentesque sapien <br> eu nunc luctus finibus interdum.</h5>
-                <ul class="flex gap-4 justify-start items-center mt-6">
-                    <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
-                    <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
-                    <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
-                    <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.linkedin.com/" target="_blank"></a><i class="fa-brands fa-linkedin-in text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
-                </ul>
-            </div>
-            <div class="lg:w-[753px] lg:h-[315px] flex flex-col lg:flex-row lg:mrr-[80px] lg:mt-[112px] lg:mb-[112px] mrb-[64px] mlr-4 mrr-4">
-                <div class="mr-[81px]">
-                    <h5 class="font-[700] text-[20px] leading-[30px] mb-4">Service</h5>
-                    <ul class="list-none">
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Why us</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Enterprise</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Customer Story</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Security</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Pricing</a></i></li>
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">FAQ</a></li>
+        <!-- <div class="containe"> -->
+            <div class="bg-[#1F242E] text-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center">
+                <div class="flex flex-col lg:mt-[115px] mt-[64px] mb-[155px]">
+                    <a href="#" class="flex items-center gap-2">
+                        <img class="w-[48px] h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
+                        <h1 class="font-[700] text-[32px] text-[#FFFFFF]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
+                    </a>
+                    <h5 class="mt-[20px] mb-[24px] font-[500] text-[14px] leading-[24px] text-[#FFFFFFB2] ">Duis et leo eleifend, consectetur diam <br/> ac, efficitur augue. Pellentesque sapien <br> eu nunc luctus finibus interdum.</h5>
+                    <ul class="flex gap-4 justify-start items-center mt-6">
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#2AB8DB] rounded-[5px] p-[15px] transition-all cursor-pointer"><a href="https://www.linkedin.com/" target="_blank"></a><i class="fa-brands fa-linkedin-in text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
                     </ul>
                 </div>
-                <div class="mr-[113px]">
-                    <h5 class="font-[700] text-[20px] leading-[30px] mb-4">About</h5>
-                    <ul class="list-none">
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Home</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">About Us</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Services</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Portfolio</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Blog</a></i></li>
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="mr-[60px]">
-                    <h5 class="font-[700] text-[20px] leading-[30px] mb-4 whitespace-nowrap">Quick links</h5>
-                    <ul class="list-none">
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Product Design</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Business Consulting</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">IT Service</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">SEO Optimization</a></i></li>
-                        <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Blog</a></i></li>
-                        <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Cyber Security</a></li>
-                    </ul>
-                </div>
-                <div class="-mr-[140px]"> 
-                    <h5 class="font-[500] text-[20px] leading-[30px]">Subscribe to us</h5>
-                    <h3 class="font-[500] text-[16px] leading-[30px] text-[#FFFFFFB2] whitespace-nowrap mt-[13px] mb-[21px]">Join us to our newsletter submit.</h3>
-                    <div class="flex">
-                        <input type="email" name="email" id="email" placeholder="Enter your email" class="rounded-[100px] border-1 border-[#FFFFFF0D] pl-[29px] pb-[13px] pt-[16px] w-[270px]" >
-                        <i class="fa-solid fa-arrow-right -ml-10 mt-5 text-[#2AB8DB]"></i>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="ml-[30px]">
+                        <h5 class="font-[700] text-[20px] leading-[30px] mb-4">Service</h5>
+                        <ul class="list-none">
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Why us</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Enterprise</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Customer Story</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Security</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Pricing</a></i></li>
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">FAQ</a></li>
+                        </ul>
                     </div>
-                    <div class="mt-[23px] flex justify-center items-center gap-[14px]">
-                        <div class="-mt-6 bg-[#2AB8DB] w-[20px] h-[20px] rounded-[50px] px-1">
-                            <i class="fa-solid fa-check w-[9px] h-[9px] text-[#FFFFFF] flex justify-center items-center"></i>
+                    <div class="ml-[81px]">
+                        <h5 class="font-[700] text-[20px] leading-[30px] mb-4">About</h5>
+                        <ul class="list-none">
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Home</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">About Us</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Services</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Portfolio</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Blog</a></i></li>
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ml-[113px]">
+                        <h5 class="font-[700] text-[20px] leading-[30px] mb-4 whitespace-nowrap">Quick links</h5>
+                        <ul class="list-none">
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#banner">Product Design</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Business Consulting</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">IT Service</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">SEO Optimization</a></i></li>
+                            <li class="text-[#FFFFFFB2] mb-3 font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300"><a href="#">Blog</a></i></li>
+                            <li class="text-[#FFFFFFB2] font-[500] text-[16px] leading-[40px] hover:text-[#2AB8DB] transition-all duration-300 whitespace-nowrap"><a href="#">Cyber Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="ml-[50px]"> 
+                        <h5 class="font-[500] text-[20px] leading-[30px]">Subscribe to us</h5>
+                        <h3 class="font-[500] text-[16px] leading-[30px] text-[#FFFFFFB2] whitespace-nowrap mt-[13px] mb-[21px]">Join us to our newsletter submit.</h3>
+                        <div class="flex">
+                            <input type="email" name="email" id="email" placeholder="Enter your email" class="rounded-[100px] border-1 border-[#FFFFFF0D] pl-[29px] pb-[13px] pt-[16px] w-[270px]" >
+                            <i class="fa-solid fa-arrow-right -ml-10 mt-5 text-[#2AB8DB]"></i>
                         </div>
-                        <h4 class="font-[500] text-[16px] leading-[30px] text-[#FFFFFFB2] whitespace-nowrap">Our <span class="text-[#2AB8DB]">Privacy Policy</span> and provide <br> updates from our company.</h4>
+                        <div class="mt-[23px] flex justify-center items-center gap-[14px]">
+                            <div class="-mt-6 bg-[#2AB8DB] w-[20px] h-[20px] rounded-[50px] px-1">
+                                <i class="fa-solid fa-check w-[9px] h-[9px] text-[#FFFFFF] flex justify-center items-center"></i>
+                            </div>
+                            <h4 class="font-[500] text-[16px] leading-[30px] text-[#FFFFFFB2] whitespace-nowrap">Our <span class="text-[#2AB8DB]">Privacy Policy</span> and provide <br> updates from our company.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-[#181D25] text-[#FFFFFF]">
-            <div class="flex flex-col lg:flex-row justify-center items-center">
-                <h4 class="font-[500] text-[18px] leading-[30px] text-[#FFFFFF] my-[41px]"> <span class="text-[#2AB8DB]">naxite</span> © Copyright-2023 All Rights Reserved.</h4>
-                <!-- <hr class="border border-[#015533] w-[343px] lg:w-[1px] lg:h-[30px] mt-[16px] mb-[16px] mx-4 lg:my-4">
-                <h4 class="font-[400] text-[16px] leading-[26px] mb-4 lg:mb-0">Designed with ❤ by Ontik Creative</h4> -->
+            <div class="bg-[#181D25] text-[#FFFFFF]">
+                <div class="flex flex-col lg:flex-row justify-center items-center">
+                    <h4 class="font-[500] text-[18px] leading-[30px] text-[#FFFFFF] my-[41px]"> <span class="text-[#2AB8DB]">naxite</span> © Copyright-2023 All Rights Reserved.</h4>
+                </div>
             </div>
         </div>
     </footer> 
