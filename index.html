@@ -28,10 +28,10 @@
 <body class="syne-font">
     
     <!-- header section -->
-    <header>
-        <nav class="pt-[25px] flex flex-row items-center justify-between lg:gap-20 lg:justify-evenly lg:items-center lg:px-20 px-3">
+    <header class="container">
+        <nav class="pt-[25px] flex flex-row items-center justify-between lg:items-center">
             <!-- img + siteName -->
-            <a href="#" class="flex items-center gap-2 lg:mr-[125px]">
+            <a href="#" class="flex items-center gap-2">
                 <img class="w-[40px] lg:w-[48px] lg:h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
                 <h1 class="font-[500] text-[20px] lg:font-[700] lg:text-[32px] text-[#1F242E]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
             </a>
@@ -47,7 +47,7 @@
             </button>
 
             <!-- nav links -->
-            <div id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-20 bg-[#2AB8DB] py-3 rounded-[20px] lg:py-0 right-5 w-2/3 lg:w-auto lg:bg-transparent z-40">
+            <div id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-20 bg-[#2AB8DB] lg:py-0 py-3 rounded-[20px] lg:py-0 right-5 w-2/3 lg:w-auto lg:bg-transparent z-40">
                 <ul class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 font-[700] text-[18px] text-white lg:text-[#1F242E] ">
                     <li><a class="hover:text-black lg:hover:text-[#2AB8DB] -ml-5 lg:-ml-0" href="#">Home</a></li>
                     <li class="group relative w-full">
@@ -74,11 +74,11 @@
     </header>
 
 
-    <main class="hidden">
+    <main>
         <!-- banner section 
          pt-[221px] pb-[221px] pl-[372px] pr-[758px]  || xl:pt-[221px] xl:pb-[221px] xl:pl-[372px] 
         -->
-        <div class="mt-[25px] swiper my-director-slider h-[800px] max-w-[1920px] mx-auto"> 
+        <div class="hidden mt-[25px] swiper my-director-slider h-[800px] max-w-[1920px] mx-auto"> 
             <div class="swiper-wrapper">
                 <!-- slider - 1 -->
                 <div class="swiper-slide relative">
@@ -191,35 +191,10 @@
         </div>
 
         <!-- service section -->
-        <div>
+        <div class="container">
             <div class="mt-[120px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
                 <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                        <div class="w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                            <img class="w-[50px] h-[50px] transition-all duration-300
-                                        group-hover:filter 
-                                        group-hover:invert-[100%] 
-                                        group-hover:sepia-[6%] 
-                                        group-hover:saturate-[2275%] 
-                                        group-hover:hue-rotate-[151deg] 
-                                        group-hover:brightness-[92%] 
-                                        group-hover:contrast-[90%]"
-                                src="./assets/Consultancy.png" 
-                                alt="Consultancy" />
-                        </div>
-    
-                    <i class="fa-solid fa-arrow-down mt-5 text-2xl group-hover:text-[#FFFFFF]"></i>
-    
-                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">IT Consultancy</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit. In non nisl.</h4>
-    
-                    <ul class="open-sans-font mt-[30px]">
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
-                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
-                    </ul>
-                </div>
-                <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                    <div class="w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
                         <img class="w-[50px] h-[50px] transition-all duration-300
                                     group-hover:filter 
                                     group-hover:invert-[100%] 
@@ -230,12 +205,42 @@
                                     group-hover:contrast-[90%]"
                             src="./assets/Consultancy.png" 
                             alt="Consultancy" />
-                    </div>      
-                    
-                        <i class="fa-solid fa-arrow-down mt-5 text-2xl group-hover:text-[#FFFFFF]"></i>
+                    </div>
+                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                            src="./assets/serviceHovered1.png" 
+                            alt="Consultancy" />
+                    </div>
     
-                    <h2 class="text-[#1F242E] font-[700] text-[24px] leading-[34px] mt-[24px]">Data & Analytics</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit. In non nisl.</h4>
+                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+    
+                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">IT Consultancy</h2>
+                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
+    
+                    <ul class="open-sans-font mt-[30px]">
+                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
+                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>Digital Production</li>
+                        <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2"></i>App Development</li>
+                    </ul>
+                </div>
+                <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                        <img class="w-[50px] h-[50px] transition-all duration-300"
+                            src="./assets/serviceUnhovered2.png" 
+                            alt="Consultancy" />
+                    </div>
+                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                            src="./assets/Data&Analytics.png" 
+                            alt="Consultancy" />
+                    </div>   
+                
+                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
+    
+                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">Data & Analytics</h2>
+                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
     
                     <ul class="open-sans-font mt-[30px]">
                         <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
@@ -244,22 +249,21 @@
                     </ul>
                 </div>
                 <div class="group w-[370px] h-[481px] shadow-xl bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px]  cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
-                    <div class="w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
-                            <img class="w-[50px] h-[50px] transition-all duration-300
-                                        group-hover:filter 
-                                        group-hover:invert-[100%] 
-                                        group-hover:sepia-[6%] 
-                                        group-hover:saturate-[2275%] 
-                                        group-hover:hue-rotate-[151deg] 
-                                        group-hover:brightness-[92%] 
-                                        group-hover:contrast-[90%]"
-                                src="./assets/CyberSecurity.png" 
-                                alt="Consultancy" />
+                    <div class="group-hover:hidden block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                        <img class="w-[50px] h-[50px] transition-all duration-300"
+                            src="./assets/CyberSecurity.png" 
+                            alt="Consultancy" />
                     </div>
-                    <i class="fa-solid fa-arrow-down mt-5 text-2xl group-hover:text-[#FFFFFF]"></i>
+                    <div class="hidden group-hover:block w-[100px] h-[110px] bg-[#2AB8DB] rounded-[10px] flex justify-center items-center transition-all duration-300 group-hover:bg-white">
+                        <img class="w-[50px] h-[50px] transition-all duration-300 mt-7 ml-6"
+                            src="./assets/serviceHovered3.png" 
+                            alt="Consultancy" />
+                    </div>
+                    <img class="group-hover:hidden block mt-[20px]" src="./assets/arrowLine.png" alt="arrowLine">
+                    <img class="hidden group-hover:block mt-[20px]" src="./assets/hoveredArrowLine.png" alt="hoveredArrowLine">
     
-                    <h2 class="text-[#1F242E] font-[700] text-[24px] leading-[34px] mt-[24px] group-hover:text-[#FFFFFF]">Cyber Security</h2>
-                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit. In non nisl.</h4>
+                    <h2 class="text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px] group-hover:text-[#FFFFFF]">Cyber Security</h2>
+                    <h4 class="open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF] mt-3">Consectetur adipiscing elit. In non nisl.</h4>
     
                     <ul class="open-sans-font mt-[30px]">
                         <li class="font-[400] text-[16px] leading-[34px] text-[#777777] group-hover:text-[#FFFFFF]"><i class="fa-solid fa-check text-[#2AB8DB] group-hover:text-[#FFFFFF] mr-2 "></i>UI Development</li>
@@ -294,7 +298,7 @@
         </div>
 
         <!-- about us section -->
-        <div class="max-w-[1920px] mx-auto">
+        <div class="hidden max-w-[1920px] mx-auto">
             <div class="mt-[114px] bg-[#1F242E] flex flex-col lg:flex-row gap-20 justify-center">
                 <!-- left side image -->
                 <div class="w-full lg:w-[35%] relative" >
@@ -342,14 +346,14 @@
         </div>
 
         <!-- case study section -->
-        <div class="mt-[104px] max-w-[1920px] mx-auto">
+        <div class="container mt-[104px]">
             <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Case Study</h3>
             <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
             
-            <div class="px-[20px] lg:px-[355px] mx-auto mt-[43px] grid gap-[30px] grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 justify-center items-center">
+            <div class="mt-[43px] grid gap-[30px] grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 justify-center items-center">
                 <div class="relative group">
                     <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300 group-hover:opacity-20" src="./assets/caseStudy1.jpg" alt="caseStudy1">
+                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
 
                         <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
                             <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
@@ -358,12 +362,12 @@
                         </div> 
                     </div>
                     <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br> Management</h2>
+                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
                     <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                 </div>
                 <div class="relative group">
                     <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300 group-hover:opacity-20" src="./assets/caseStudy2.jpg" alt="caseStudy2">
+                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
 
                         <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
                             <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
@@ -372,12 +376,12 @@
                         </div> 
                     </div>
                     <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br> Management</h2>
+                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
                     <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                 </div>
                 <div class="relative group">
                     <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300 group-hover:opacity-20" src="./assets/caseStudy1.jpg" alt="caseStudy1">
+                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy1.jpg" alt="caseStudy1">
 
                         <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
                             <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
@@ -386,12 +390,12 @@
                         </div> 
                     </div>
                     <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br> Management</h2>
+                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
                     <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                 </div>
                 <div class="relative group">
                     <div class="relative group h-[370px]">
-                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300 group-hover:opacity-20" src="./assets/caseStudy2.jpg" alt="caseStudy2">
+                        <img class="w-full h-full cursor-pointer rounded-[10px] transition-all duration-300" src="./assets/caseStudy2.jpg" alt="caseStudy2">
 
                         <div class="cursor-pointer absolute top-4 right-4 flex justify-center items-center">
                             <div class="bg-[#2AB8DB] w-[100px] h-[100px] rounded-[100px] flex justify-center items-center opacity-0 transition-all duration-300 group-hover:opacity-100">
@@ -400,18 +404,18 @@
                         </div> 
                     </div>
                     <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br> Management</h2>
+                    <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
                     <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                 </div>
             </div>
             <div class="flex justify-center items-center">
-                <button class="mt-[50px] text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[44px] pr-[43px] py-[15px] rounded-[50px] hover:text-[#2AB8DB]">View All Portfolio<i class="fa-solid fa-arrow-right"></i></i></button>
+                <button class="mt-[50px] text-[#1F242E] whitespace-nowrap cursor-pointer font-[700] text-4 flex gap-[6px] items-center border border-[#1F242E1A] pl-[44px] pr-[43px] py-[15px] rounded-[50px] hover:text-[#2AB8DB] hover:text-[#FFFFFF] hover:bg-[#2AB8DB]">View All Portfolio<i class="fa-solid fa-arrow-right"></i></i></button>
             </div>
 
         </div>
 
         <!-- success numbers section -->
-        <div class="h-[600px] mt-[120px] relative">
+        <div class="hidden h-[600px] mt-[120px] relative">
             <div class="bg-[url('./assets/SuccessNoBG.png')] bg-cover bg-center w-full h-full relative">
 
                 <img class="absolute top-0 left-0 -ml-50" src="./assets/earthImg.png" alt="earthImg">
@@ -465,13 +469,13 @@
         </div>
 
         <!-- team member section  -->
-        <div class="mt-[104px] max-w-[1920px] mx-auto">
+        <div class="mt-[104px] container">
             <h3 class="font-[700] text-[52px] text-center text-[#1F242E]">Team Member</h3>
             <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
             
             <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group hover:hover:shadow-[0_40px_80px_#B6B8B6] transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/teammate1.jpg" alt="teammate1">
+                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
+                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate1">
                     <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
                     <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
                     <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
@@ -482,8 +486,8 @@
                         <li>Be.</li>
                     </ul>
                 </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group hover:hover:shadow-[0_40px_80px_#B6B8B6] transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/teammate2.jpg" alt="teammate2">
+                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
+                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate2">
                     <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
                     <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Roksana Rahman</h4>
                     <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
@@ -494,8 +498,8 @@
                         <li>Be.</li>
                     </ul>
                 </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group hover:hover:shadow-[0_40px_80px_#B6B8B6] transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/teammate3.jpg" alt="teammate3">
+                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
+                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH2.png" alt="teammate3">
                     <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
                     <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
                     <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
@@ -506,8 +510,8 @@
                         <li>Be.</li>
                     </ul>
                 </div>
-                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group hover:hover:shadow-[0_40px_80px_#B6B8B6] transition-all duration-300">
-                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/teammate4.jpg" alt="teammate4">
+                <div class="bg-[#FFFFFF] rounded-[10px] shadow-xl text-center group transition-all duration-300">
+                    <img class="w-[270px] h-[270px] rounded-[10px]" src="./assets/bannerH1.png" alt="teammate4">
                     <h2 class="font-[600] text-[14px] leading-[30px] text-[#2AB8DB] text-center mt-[20px]">IT Marketing</h2>
                     <h4 class="font-[700] text-[20px] leading-100% text-[#1F242E] mt-[4px]">Yellow Piran Makuram</h4>
                     <hr class="mt-[26px] border-2 border-[#1F242E1A] w-[90px] mx-[90px] mb-[5px] group-hover:border-2 group-hover:border-[#2AB8DB]">
@@ -522,138 +526,140 @@
         </div>  
 
         <!-- feedback section  -->
-        <div class="mt-[170px] max-w-[1920px] mx-auto lg:px-[175px] relative">
-            <h2 class="absolute -top-[50px] left-1/2 -translate-x-1/2 whitespace-nowrap font-[700] text-[40px] lg:text-[102px] leading-[100px] text-[#1F242E1A] text-centerr z-0 pointer-events-none">What Client Says?</h2>
-            <div class="swiper my-director-slider"> 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
-                        <!-- user profile -->
-                        <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                        <div class="flex justify-between">
-                            <div class="flex gap-[22px] justify-start items-center">
-                                <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate1.jpg" alt="teammate1">
-                                
-                                <div>
-                                    <div class="flex gap-7">
-                                        <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
-                                        <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
-                                    </div>
-                                    <div class="flex gap-1 items-center">
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex">
-                                <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
-                                <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
-                            </div>
-                        </div>
-                        <!-- review -->
-                        <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
-                    </div>
-                    <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
-                        <!-- user profile -->
-                        <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                        <div class="flex justify-between">
-                            <div class="flex gap-[22px] justify-start items-center">
-                                <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate2.jpg" alt="teammate2">
-                                
-                                <div>
-                                    <div class="flex gap-7">
-                                        <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
-                                        <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
-                                    </div>
-                                    <div class="flex gap-1 items-center">
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+        <div class="mt-[120px] ">
+            <div class="container relative">
+                <h2 class="mt-[170px] absolute -top-[140px] left-1/2 -translate-x-1/2 whitespace-nowrap font-[700] text-[40px] lg:text-[102px] leading-[100px] text-[#1F242E1A] text-centerr z-0 pointer-events-none">What Client Says?</h2>
+                <div class="swiper my-director-slider"> 
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[60px] pl-[99px] pb-[50px] pr-[101px] mt-[80px] overflow-hidden">
+                            <!-- user profile -->
+                            <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                            <div class="flex justify-between">
+                                <div class="flex gap-[22px] justify-start items-center">
+                                    <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate1.jpg" alt="teammate1">
+                                    
+                                    <div>
+                                        <div class="flex gap-7">
+                                            <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
+                                            <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="flex">
-                                <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
-                                <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
-                            </div>
-                        </div>
-                        <!-- review -->
-                        <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
-                    </div>
-                    <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
-                        <!-- user profile -->
-                        <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                        <div class="flex justify-between">
-                            <div class="flex gap-[22px] justify-start items-center">
-                                <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate1.jpg" alt="teammate1">
-                                
-                                <div>
-                                    <div class="flex gap-7">
-                                        <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
-                                        <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
-                                    </div>
-                                    <div class="flex gap-1 items-center">
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
-                                    </div>
+    
+                                <div class="flex">
+                                    <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
+                                    <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
                                 </div>
                             </div>
-
-                            <div class="flex">
-                                <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
-                                <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
-                            </div>
+                            <!-- review -->
+                            <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
                         </div>
-                        <!-- review -->
-                        <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
-                    </div>
-                    <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
-                        <!-- user profile -->
-                        <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                        <div class="flex justify-between">
-                            <div class="flex gap-[22px] justify-start items-center">
-                                <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate2.jpg" alt="teammate2">
-                                
-                                <div>
-                                    <div class="flex gap-7">
-                                        <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
-                                        <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
-                                    </div>
-                                    <div class="flex gap-1 items-center">
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <i class="text-[#E3A573] fa-solid fa-star"></i>
-                                        <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+                        <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
+                            <!-- user profile -->
+                            <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                            <div class="flex justify-between">
+                                <div class="flex gap-[22px] justify-start items-center">
+                                    <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate2.jpg" alt="teammate2">
+                                    
+                                    <div>
+                                        <div class="flex gap-7">
+                                            <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
+                                            <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+                                        </div>
                                     </div>
                                 </div>
+    
+                                <div class="flex">
+                                    <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
+                                    <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
+                                </div>
                             </div>
-
-                            <div class="flex">
-                                <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
-                                <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
-                            </div>
+                            <!-- review -->
+                            <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
                         </div>
-                        <!-- review -->
-                        <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
+                        <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
+                            <!-- user profile -->
+                            <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                            <div class="flex justify-between">
+                                <div class="flex gap-[22px] justify-start items-center">
+                                    <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate1.jpg" alt="teammate1">
+                                    
+                                    <div>
+                                        <div class="flex gap-7">
+                                            <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
+                                            <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="flex">
+                                    <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
+                                    <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
+                                </div>
+                            </div>
+                            <!-- review -->
+                            <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
+                        </div>
+                        <div class="swiper-slide relative z-10 w-[1170px] mx-auto border-2 border-dashed border-[#1F242E1A] rounded-[10px] pt-[15px] pl-[99px] pb-[44px] pr-[101px] mt-[80px] overflow-hidden">
+                            <!-- user profile -->
+                            <hr class="border-2 border-[#2AB8DB] w-[130px] mx-[125px] -mb-[15px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                            <div class="flex justify-between">
+                                <div class="flex gap-[22px] justify-start items-center">
+                                    <img class="w-[100px] h-[100px] rounded-[100px]" src="./assets/teammate2.jpg" alt="teammate2">
+                                    
+                                    <div>
+                                        <div class="flex gap-7">
+                                            <h2 class="font-[700] text-[24px] leading-[30px] text-[#1F242E]">L. Juarez </h2>
+                                            <h4 class="font-[700] text-[16px] leading-[30px] text-[#777777] mt-1">- Graphic Designer</h4>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <i class="text-[#E3A573] fa-solid fa-star"></i>
+                                            <h5 class="text-[#777777] font-[400] text-[14px] leading-[30px] ml-2">(5 Reviews)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="flex">
+                                    <img class="w-[112px] h-[118px]" src="./assets/quatation.png" alt="quatation">
+                                    <img class="w-[112px] h-[118px] -ml-17" src="./assets/quatation.png" alt="quatation">
+                                </div>
+                            </div>
+                            <!-- review -->
+                            <p class="font-[700] text-[25px] leading-[48px] text-[#1F242E] mt-[10px]">Nam ultricies sed leo eget vehic. Sed varius non magna quis mats. Integer finibus, nissdl at tempus semper, rokomoni our has been lectus auctor leo.</p>
+                        </div>
                     </div>
+    
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination -mx-112"></div>
                 </div>
-
-                <!-- Pagination dots -->
-                <div class="swiper-pagination -mx-112 "></div>
             </div>
         </div>
 
@@ -695,77 +701,85 @@
         </div>
 
         <!-- blog section  -->
-        <div class="mt-[106px] max-w-[1920px] mx-auto">
-            <h3 class="font-[700] text-[52px] text-center text-[#1F242E] ">Our News And Blogs</h3>
-            <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
-            
-            <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
-                <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                    <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog1.jpg" alt="blog1">
-                    <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
-                    <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More<i class="fa-solid fa-right-long w-[10px] text-[#7777774D]"></i></h4>
-                    <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
-                        <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
-                    </div>
-                    <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
+        <div class="mt-[106px] ">
+            <div class="container">
+                <h3 class="font-[700] text-[52px] text-center text-[#1F242E] ">Our News And Blogs</h3>
+                <p class="font-[400] text-[16px] leading-[30px] text-center text-[#777777]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+                
+                <div class="mt-[43px] flex flex-col lg:flex-row gap-[30px] justify-center items-center">
+                    <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
+                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog1.jpg" alt="blog1">
+                        <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
+                        <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More
+                            <img src="./assets/readMoreArrow.png" class="ml-[6px]" alt="readMoreArrow">
+                        </h4>
+                        <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
+                            <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
                         </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                    <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog2.jpg" alt="blog2">
-                    <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
-                    <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More<i class="fa-solid fa-right-long w-[10px] text-[#7777774D]"></i></h4>
-                    <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
-                        <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
-                    </div>
-                    <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
+                        <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
-                    <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog3.jpg" alt="blog3">
-                    <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
-                    <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
-                    <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More<i class="fa-solid fa-right-long w-[10px] text-[#7777774D]"></i></h4>
-                    <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
-                        <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
+                    <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
+                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog2.jpg" alt="blog2">
+                        <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
+                        <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read More
+                            <img src="./assets/readMoreArrow.png" class="ml-[6px]" alt="readMoreArrow">
+                        </h4>
+                        <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
+                            <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
+                        </div>
+                        <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
+                    <div class="cursor-pointer group relative bg-[#FFFFFF] rounded-[10px] shadow-xl text-center">
+                        <img class="w-[370px] h-[270px] rounded-[10px] group-hover:opacity-50 transition-all duration-300" src="./assets/blog3.jpg" alt="blog3">
+                        <h2 class="font-[600] text-[24px] leading-[34px] text-[##1F242E] text-left mt-[20px] mx-[30px]">Praesent euismod lorem <br> a purus placerat.</h2>
+                        <hr class="mt-[21px] border-2 border-[#1F242E1A] w-[130px] mx-[30px] mb-[11px] group-hover:border-2 group-hover:border-[#2AB8DB]">
+                        <h4 class="text-[#777777] font-[700] text-[14px] text-left mx-[30px] flex justify-start items-center gap-1">Read more
+                            <img src="./assets/readMoreArrow.png" class="ml-[6px]" alt="readMoreArrow">
+                        </h4>
+                        <div class="absolute top-2 right-2 bg-[#1F242E] w-[50px] h-[50px] rounded-[3px] flex justify-center items-center">
+                            <h1 class="text-[#FFFFFF] text-[700] text-[14px] leading-[15px] text-center">05 <br> Dec</h1>
                         </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
-                        </div>
-                        <div class="flex justify-center items-center gap-2">
-                            <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
-                            <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
+                        <div class="open-sans-font mt-[26px] mb-[30px] flex justify-center items-center gap-[30px] bg-[#F7F7F7] rounded-[10px] pt-[16px] pr-[23px] pb-[15px] pl-[24px] mx-[30px] group-hover:bg-[#2AB8DB] transition-all duration-300">
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-user text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"><span class="text-[#2AB8DB] group-hover:text-[#FFFFFF] transition-all duration-300">By</span> Sazol Aliur</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-message text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">23</h4>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <i class="fa-regular fa-eye text-[#777777] group-hover:text-[#FFFFFF] transition-all duration-300"></i>
+                                <h4 class="font-[400] text-[14px] text-[#777777] -mt-1 group-hover:text-[#FFFFFF] transition-all duration-300">503</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -853,9 +867,9 @@
     </main>
 
     <!-- footer section -->
-    <footer class="hidden">
+    <footer>
         <div class="mt-[120px] bg-[#1F242E] text-[#FFFFFF] flex flex-col lg:flex-row lg:gap-[30px]">
-            <div class="flex flex-col lg:mt-[115px] mt-[64px] lg:mb-[155px] lg:mxx-25 mr-[16px] ml-[16px] lg:ml-[150px]">
+            <div class="flex flex-col lg:mt-[115px] mt-[64px] mb-[155px] mr-[16px] ml-[16px] ml-[150px]">
                 <a href="#" class="flex items-center gap-2 mr-[125px]">
                     <img class="w-[48px] h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
                     <h1 class="font-[700] text-[32px] text-[#FFFFFF]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
