@@ -31,19 +31,17 @@
     <header class="header">
     <div class="container">
         <nav class="pt-[25px] flex items-center justify-between">
-
+            
+            <div id="overlay" class="block lg:hidden fixed inset-0 bg-black/50 hidden z-40"></div> 
             <!-- name + siteLogo -->
             <div>
                 <a href="#" class="flex items-center gap-2 ml-5 lg:ml-0">
-                    <img class="w-[40px] lg:w-[48px]" src="./assets/siteIcon.png" alt="siteIcon">
-                    <h1 class="font-[500] text-[20px] lg:text-[32px] text-[#1F242E]">
-                        Nax<span class="text-[#2AB8DB]">i</span>te
-                    </h1>
+                    <img class="w-[100px] lg:w-[173px]" src="./assets/logo.png" alt="siteIcon">
                 </a>
             </div>
 
             <!-- Hamburger -->
-            <button id="hamburger" class="lg:hidden mr-5">
+            <button id="hamburger" class="lg:hidden mr-5 hover:bg-[#2AB8DB] px-2 rounded-[5px]">
                 <img src="./assets/hamburgerMenuIcon.png" class="w-8 cursor-pointer" />
             </button>
 
@@ -53,10 +51,10 @@
                     <li><a class="hover:text-black lg:hover:text-[#2AB8DB] -ml-5 lg:-ml-0" href="#">Home</a></li> 
                     <li class="group relative w-full"> 
                         <a class="flex justify-center items-center gap-1 lg:py-4" href="#"> <span class="hover:text-black lg:group-hover:text-[#2AB8DB]">Pages</span> <i class="text-[#2AB8DB] lg:text-[#77777780] group-hover:text-[#2AB8DB] fa-solid fa-angle-down"></i> </a> 
-                        <ul class="absolute left-0 top-full bg-[#FFFFFF] hidden lg:group-hover:block shadow-lg border-2 border-[#2AB8DB] rounded-[10px] text-left " > 
-                            <li class="text-left"><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 1</a></li> 
-                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 2</a></li> 
-                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 border-b border-[#EAEAEA]">Page 3</a></li> 
+                        <ul class="absolute left-0 top-full bg-[#FFFFFF] hidden lg:group-hover:block shadow-lg border-2 border-[#2AB8DB] rounded-[10px] text-left w-[220px]" > 
+                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 border-b border-[#EAEAEA] px-4">Page 1</a></li> 
+                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 border-b border-[#EAEAEA] px-4">Page 2</a></li> 
+                            <li><a href="#" class="w-full whitespace-nowrap text-[#2AB8DB] block px-4 py-2 hover:text-pink-400 px-4">Page 3</a></li> 
                         </ul> 
                     </li> 
                     <li><a class="hover:text-black lg:hover:text-[#2AB8DB]" href="#">Services</a></li> 
@@ -77,10 +75,9 @@
 
     <!-- small screen -->
     <div id="drawer"
-        class="fixed top-0 left-0 w-[260px] h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6">
-
+        class="overflow-y-auto block lg:hidden fixed top-0 left-0 w-[260px] h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6">
         
-        <button id="closeDrawer" class="text-3xl mb-6 cursor-pointer">
+        <button id="closeDrawer" class="text-3xl mb-6 cursor-pointer ml-45 hover:text-white hover:bg-[#2AB8DB] px-1 rounded-[5px]">
             <i class="fa-solid fa-xmark"></i>
         </button>
 
@@ -89,9 +86,9 @@
             <li><a href="#" class="hover:text-[#2AB8DB]">Home</a></li>
 
             <li class="group">
-                <button id="mobilePagesBtn" class="flex justify-between items-center gap-2 hover:text-[#2AB8DB] cursor-pointer w-full">
-                    <span >Pages</span>
-                    <i class="fa-solid fa-angle-down bg-gray-300 text-[#1F242E] p-1 rounded-[5px]"></i>
+                <button id="mobilePagesBtn" class="flex justify-between items-center gap-2 hover:text-[#2AB8DB] w-full">
+                    <span>Pages</span>
+                    <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#2AB8DB] text-black bg-gray-300 rounded-[10px] p-1 cursor-pointer"></i>
                 </button>
 
                 <ul id="mobilePagesMenu" class="hidden ml-4 mt-2 text-[18px] font-[600]">
@@ -104,25 +101,19 @@
             <li><a href="#" class="hover:text-[#2AB8DB]">Services</a></li>
             <li><a href="#" class="hover:text-[#2AB8DB]">Projects</a></li>
             <li><a href="#" class="hover:text-[#2AB8DB]">Contact</a></li>
-            <li>
-                <button class="group cursor-pointer hidden lg:flex font-bold items-center gap-2 border border-[#1F242E1A] px-6 py-3 rounded-full hover:bg-[#2AB8DB] hover:text-white bg-black">
-                    <i class="fa-regular fa-message text-[#2AB8DB] group-hover:text-white"></i>
-                    Let's Chat
-                </button>
-            </li>
         </ul>
 
         <!-- Button -->
-        
-        <!-- name + siteLogo -->
-        <div class="mt-80">
-            
-            <a href="#" class="flex items-center gap-2 ml-5 lg:ml-0">
-                <img class="w-[40px] lg:w-[48px]" src="./assets/siteIcon.png" alt="siteIcon">
-                <h1 class="font-[500] text-[20px] lg:text-[32px] text-[#1F242E]">
-                    Nax<span class="text-[#2AB8DB]">i</span>te
-                </h1>
-            </a>
+        <div class="mt-60">
+            <button class="mt-10 group cursor-pointer lg:flex font-bold items-center gap-2 border border-[#2AB8DB] px-6 py-3 rounded-full hover:bg-[#2AB8DB] hover:text-white w-[190px]">
+                <i class="fa-regular fa-message text-[#2AB8DB] group-hover:text-white"></i>
+                Let's Chat
+            </button>
+            <hr class="ml-0 my-4 w-[200px] text-gray-400">
+            <!-- name + siteLogo -->
+            <div class="flex justify-center items-center">
+                <img class="w-[110px] lg:w-[173px]" src="./assets/logo.png" alt="siteIcon">
+            </div>
         </div>
     </div>
 
@@ -432,7 +423,6 @@
             </div>
        </div>
 
-
         <!-- case study section -->
         <div class="bg-[#F7F7F7] pt-[104px]">
             <div class="container">
@@ -451,7 +441,7 @@
                             </div> 
                         </div>
                         <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br class="block lg:hidden"> Management</h2>
                         <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                     </div>
                     <div class="relative group px-8 lg:px-0">
@@ -465,7 +455,7 @@
                             </div> 
                         </div>
                         <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Web design, Mobile</h4>
-                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, business uX/UI <br class="block lg:hidden"> design.</h2>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, <br class="block lg:hidden"> business uX/UI design.</h2>
                         <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                     </div>
                     <div class="relative group px-8 lg:px-0">
@@ -479,7 +469,7 @@
                             </div> 
                         </div>
                         <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Marketing, Software</h4>
-                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License Management</h2>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Software License <br class="block lg:hidden"> Management</h2>
                         <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                     </div>
                     <div class="relative group px-8 lg:px-0">
@@ -493,7 +483,7 @@
                             </div> 
                         </div>
                         <h4 class="mt-[25px] font-[600] text-[14px] text-[#2AB8DB]">Web design, Mobile</h4>
-                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, business uX/UI <br class="block lg:hidden">  design.</h2>
+                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#1F242E] whitespace-nowrap">Digital agency, <br class="block lg:hidden"> business uX/UI design.</h2>
                         <hr class="border-2 border-[#1F242E1A] w-[130px] mt-[21px] group-hover:border-2 group-hover:border-[#2AB8DB]">
                     </div>
                 </div>
@@ -530,22 +520,22 @@
                                 </p>
                             </div>
     
-                            <div class="mt-[44.5px] grid grid-cols-2 grid-rows-1 lg:flex lg:flex-col lg:flex-row gap-[30px] mb-[120px]">
-                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                            <div class="mt-[44.5px] grid grid-cols-2 grid-rows-1 justify-items-center gap-[20px] lg:flex lg:flex-col lg:flex-row  lg:justify-start lg:gap-[30px] mb-[120px]">
+                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[140px] lg:w-[170px] h-[200px] flex flex-col justify-center items-center">
                                     <i class="text-[#F7F7F7] text-3xl mb-5 fa-solid fa-people-group"></i>
                                     <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
                                         30 + <br> Member
                                     </h3>
                                 </div>
     
-                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                                <div class="border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[140px] lg:w-[170px] h-[200px] flex flex-col justify-center items-center">
                                     <img class="mb-5" src="./assets/Consultancy.png" alt="Consultancy">
                                     <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
                                         65 % <br> Projects
                                     </h3>
                                 </div>
     
-                                <div class="ml-30 lg:ml-0 border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[170px] h-[200px] flex flex-col justify-center items-center">
+                                <div class="ml-40 lg:ml-0 border border-[#FFFFFF] rounded-[10px] bg-[url('./assets/numberBG.png')] w-[140px] lg:w-[170px] h-[200px] flex flex-col justify-center items-center">
                                     <img class="mb-5" src="./assets/Consultancy.png" alt="Digital">
                                     <h3 class="text-center text-[#FFFFFF] font-[500] text-[24px] leading-[34px]">
                                         85% SEO <br> Sketch
@@ -886,7 +876,7 @@
 
         <!-- more features -->
         <div class="container">
-            <div class="mt-[120px] pb-[50px] lg:-mb-[120px] grid grid-cols-2 grid-rows-2 justify-center items-center lg:grid-cols-6 gap-[30px] lg:ml-0 ml-10">
+            <div class="mx-15 lg:mx-0 mt-[120px] pb-[50px] lg:-mb-[120px] grid grid-cols-2 grid-rows-2 justify-center items-center lg:grid-cols-6 gap-[30px]">
                 <div class="group cursor-pointer bg-[#1F242E08] pt-[30px] pb-[39px] px-[17px] w-[170px] rounded-[10px] hover:bg-[#2AB8DB]">
                     <img class="px-[10px] hovered_services group-hover:filter 
                                 group-hover:invert-[100%] 
@@ -971,7 +961,7 @@
             <div class="flex flex-col lg:mt-[115px] mt-[64px] mb-[15px] lg:mb-[155px] ml-5 lg:ml-0">
                 <a href="#" class="flex items-center gap-2">
                     <img class="w-[48px] h-[30px]" src="./assets/siteIcon.png" alt="siteIcon">
-                    <h1 class="font-[700] text-[32px] text-[#FFFFFF]">Nax<span class="text-[#2AB8DB]">i</span>te</h1>
+                    <img class="w-[117px] h-[30px]" src="./assets/FooterLogoNaxite.png" alt="siteIcon">
                 </a>
                 <h5 class="mt-[20px] mb-[24px] font-[500] text-[14px] leading-[24px] text-[#FFFFFFB2] ">Duis et leo eleifend, consectetur diam <br/> ac, efficitur augue. Pellentesque sapien <br> eu nunc luctus finibus interdum.</h5>
                 <ul class="flex gap-4 justify-start items-center mt-6">
@@ -1024,7 +1014,7 @@
                     </div>
                     <div class="mt-[23px] flex justify-center items-center gap-[14px]">
                         <div class="-mt-6 bg-[#2AB8DB] w-[20px] h-[20px] rounded-[50px] px-1">
-                            <i class="fa-solid fa-check w-[9px] h-[9px] text-[#FFFFFF] flex justify-center items-center"></i>
+                            <input type="checkbox" name="agreeornot" id="agreeornot" class="accent-[#2AB8DB] text-white">
                         </div>
                         <h4 class="font-[500] text-[16px] leading-[30px] text-[#FFFFFFB2] whitespace-nowrap">Our <span class="text-[#2AB8DB]">Privacy Policy</span> and provide <br> updates from our company.</h4>
                     </div>
@@ -1098,7 +1088,7 @@
             overlay.classList.add("hidden");
         });
 
-        // Open/close pages submenu
+        // Open-close pages submenu
         mobilePagesBtn.addEventListener("click", () => {
             mobilePagesMenu.classList.toggle("hidden");
         });
